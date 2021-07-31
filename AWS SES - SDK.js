@@ -3,7 +3,7 @@
 var AWS = require('aws-sdk');
 require('dotenv').config();
 // Set the region 
-AWS.config.update({ region: process.env.REGION });
+AWS.config.update({ region: process.env.AWS_REGION });
 
 // Create sendEmail params 
 var params = {

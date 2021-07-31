@@ -34,12 +34,12 @@ var tag1 = "key1=value1";
 async function main(){
   // Create the SMTP transport.
   let transporter = nodemailer.createTransport({
-    host: process.env.smtpEndpoint,
+    host: process.env.AWS_SMTP,
     port: port,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: process.env.smtpUsername,
-      pass: process.env.smtpPassword
+      user: process.env.AWS_SMTP_USERNAME,
+      pass: process.env.AWS_SMTP_KEY
     }
   });
 

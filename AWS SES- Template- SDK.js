@@ -2,7 +2,7 @@ var AWS = require('aws-sdk');
 require('dotenv').config();
 
 // Set the region 
-AWS.config.update({ region: process.env.REGION });
+AWS.config.update({ region: process.env.AWS_REGION });
 
 let guid = len => {
     var buf = [],
@@ -31,7 +31,7 @@ var params = {
         ]
     },
     Source: process.env.SENDER_EMAIL_ADDRESS, /* required */
-    Template: process.env.SES_TEMPLATENAME, /* required */
+    Template: process.env.AWS_SES_TEMPLATENAME, /* required */
     TemplateData: '{ \"FormName\":\"Submission Form\", \"name\":\"Aravind\", \"RequestID\":\"'
     + guid()+'\", \"SupportEmail\": \"support@gmail.com\"}', /* required */    
     ReplyToAddresses: [
