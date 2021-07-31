@@ -1,0 +1,18 @@
+{
+  "name": "sendemail",
+  "version": "1.0.0",
+  "description": "Send email via AWS SES",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node sendTemplatedEmail.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.5",
+    "aws-sdk": "^2.958.0",
+    "dotenv": "^10.0.0",
+    "nodemailer": "^6.6.3"
+  }
+}

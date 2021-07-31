@@ -1,0 +1,9 @@
+{
+    "Template": {
+        "TemplateName": "SubmissionConfirmationTemplate",
+        "SubjectPart": "{{FormName}} uploaded successfully",
+        "HtmlPart": "<h1>Hello {{name}},</h1><p>Your request ID# {{RequestID}} has been submitted successfully.</p> <p>Please feel free to contact {{SupportEmail}} for any queries related to your request.</p>",
+        "TextPart": "Dear {{name}},\r\nYour request ID# {{RequestID}} has been submitted successfully.\r\nPlease feel free to contact {{SupportEmail}} for any queries related to your request."
+    }
+}
+
