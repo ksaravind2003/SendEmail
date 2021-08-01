@@ -21,7 +21,7 @@ var params = {
             Text: {
                 Data: `Kudos to the Team on successful completion!
                        Cheers!`,
-                Charset: charset 
+                Charset: "UTF-8" 
               },
             Html: {
                 Charset: "UTF-8",

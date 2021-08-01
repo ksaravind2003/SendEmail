@@ -9,7 +9,7 @@ const port = 587;
 var configurationSet = "SendRawEmail";
 
 // The subject line of the email
-var subject = "Amazon SES test (Nodemailer)";
+var subject = "Send Grid email test (Nodemailer)";
 
 // The email body for recipients with non-HTML email clients.
 var body_text = `Successfully sent email using SendGrid - SMTP Configuration.
